@@ -1,0 +1,111 @@
+.search {
+    position: relative;
+    top: 15rem;
+}
+
+.search__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+}
+
+.search__container__title {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.search-section form {
+    margin-bottom: 3.125rem;
+    text-align: center;
+}
+
+.search-section input {
+    border: 0.0625rem solid var(--custom-white);
+    color: var(--custom-white);
+    background-color: var(--custom-black);
+    width: 75%;
+    padding: 1.25rem;
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
+}
+
+.search-section button {
+    position: relative;
+    border: 0.0625rem solid var(--custom-white);
+    top: .6687rem;
+    margin-left: -5px;
+    height: 3.5rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    border-left: 0;
+    cursor: pointer;
+    background-color: var(--custom-black);
+}
+
+.search-section button svg {
+    fill: var(--custom-white);
+}
+
+/* search results styling */
+.event-results-count {
+    display: block;
+    color: var(--custom-white);
+    text-align: center;
+}
+
+.event-search-results {
+    margin-top: 3.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.search__event__result__content {
+    color: var(--custom-white);
+    width: 30%;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 2.1875rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.search__event__result__content img {
+    width: 100%;
+    border: 0.0625rem solid white;
+}
+
+.search__event__result__content__date {
+    position: absolute;
+    background-color: var(--custom-black);
+    top: .625rem;
+    left: .625rem;
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+}
+
+.search__event__result__content__info {
+    position: relative;
+    background-color: var(--custom-black);
+    top: -2.5rem;
+    border: 0.0625rem solid white;
+    padding: 1.75rem;
+    font-size: .9rem;
+    transition: all .2s ease;
+}
+
+.search__event__result__content__info:hover {
+    box-shadow: -1rem 1rem 0rem 0rem #e83c3c;
+    transform: translate(1.6rem, -1.6rem);
+}
+
+.search__event__result__content__location {
+    background-color: var(--custom-red);
+    padding: 0.25rem 0.5rem;
+    color: var(--custom-black);
+    margin-right: .625rem;
+}

@@ -1,0 +1,119 @@
+.more__assets {
+    background-image: url(../assets/images/visual-eyecatchers.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 20%;
+    margin-top: 6.25rem;
+    margin-bottom: 5rem;
+}
+
+.assets__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.pictures,
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--custom-red);
+    margin-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.pictures {
+    display: flex;
+    align-items: center;
+}
+
+.pictures__text {
+    margin-right: 1rem;
+}
+
+.pictures__text span {
+    display: inline-block;
+    text-align: center;
+}
+
+.pictures svg {
+    width: 10rem;
+}
+
+.pictures__text,
+.videos__text {
+    color: var(--custom-black);
+    font-size: 2.5rem;
+    font-family: var(--font-stolzlDisplay);
+    font-weight: bold;
+}
+
+.videos {
+    display: flex;
+    align-items: center;
+}
+
+.videos__text {
+    display: flex;
+    align-items: center;
+}
+
+.videos__text span {
+    margin-left: 0.5rem;
+}
+
+.videos svg {
+    width: 10rem;
+    transform: rotate(180deg);
+}
+
+.newsletter {
+    margin-left: 2rem;
+    padding-bottom: 30.5rem;
+    background-image: url(../assets/images/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.newsletter__content__up {
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.input-text {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 0.125rem solid var(--custom-white);
+    padding: 0.9375rem;
+    margin-right: 0.9375rem;
+    width: 25%;
+}
+
+.input-button {
+    background-color: var(--custom-red);
+    color: black;
+    padding: 0.9375rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    font-family: var(--font-stolzl);
+    font-weight: bold;
+}
+
+.newsletter__content__down {
+    color: white;
+}
+
+.newsletter__content__down p {
+    color: var(--custom-grey);
+    font-family: var(--font-stolzl);
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+}

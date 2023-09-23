@@ -1,0 +1,40 @@
+:root {
+    --max-width: 1680px;
+
+    --font-stolzlDisplay: 'Stolzl Display';
+    --font-stolzl: 'Stolzl';
+
+    --padding: 1rem;
+
+    --custom-red: #E83C3C;
+    --custom-white: #FFF;
+    --custom-black: #000;
+    --custom-grey: #ADB3B3;
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+body {
+    background-color: var(--custom-black);
+    overflow-x: hidden;
+}
+
+.header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+}
+
+.body-bg {
+    position: absolute;
+    background-image: url(../assets/images/hero-desktop.jpg);
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 75rem;
+    width: 100%;
+    z-index: -2;
+}

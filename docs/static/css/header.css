@@ -1,0 +1,250 @@
+.header {
+    position: relative;
+}
+
+.primary__header_navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.header__logo__link {
+    width: 11rem;
+}
+
+.header__logo__link__img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation style */
+
+.navlist {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3.125rem;
+    list-style: none;
+}
+
+.navlist__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--custom-white);
+}
+
+.navlist__item a::after {
+    content: '';
+    background-color: transparent;
+    display: block;
+    width: 25px;
+    height: 3px;
+}
+
+/* header right style */
+
+.header__right-bg {
+    background-color: var(--custom-red);
+    position: absolute;
+    top: -2.9rem;
+    right: 0;
+    width: 31.25rem;
+    height: 21.25rem;
+    z-index: -1;
+}
+
+.header__right {
+    margin-right: 0.3125rem;
+}
+
+.second__list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.875rem;
+    list-style: none;
+}
+
+.second__list__item {
+    margin-right: 0.625rem;
+}
+
+.second__list__item:last-child {
+    margin-right: 2.3rem;
+    margin-top: 1rem;
+}
+
+.second__list__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--custom-black);
+}
+
+.second__list__item a:hover {
+    color: var(--custom-white);
+}
+
+.second__list__item__link svg {
+    width: 1.25rem;
+    height: 1.3125rem;
+}
+
+.second__list__item__link svg:hover {
+    fill: white;
+}
+
+.second__list__item svg {
+    width: 3.1875rem;
+    height: 1.9375rem;
+    cursor: pointer;
+}
+
+.second__list__item svg:hover {
+    fill: white;
+}
+
+/* second header right style */
+
+.second__header {
+    position: relative;
+}
+
+.second__header__container, 
+.grid-container {
+    position: absolute;
+    right: 0;
+}
+
+.second__header__title-bg {
+    background-color: var(--custom-black);
+    margin-right: 2.3rem;
+    margin-top: 2.1875rem;
+}
+
+.second__header__title {
+    color: var(--custom-white);
+    padding: 0.3125rem;
+    font-family: var(--font-stolzlDisplay);
+    font-size: 4rem;
+}
+
+.second__header__link {
+    display: block;
+    width: 31.25rem;
+    margin: 0 auto;
+    margin-top: 5.3125rem;
+}
+
+.second__header__link a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    transform: translateX(13.75rem);
+    text-decoration: none;
+}
+
+.second__header__link svg {
+    width: 8.0625rem;
+    height: 4.875rem;
+    transition: 2s all ease-in-out;
+}
+
+.second__header__link svg path {
+    transition: 2s all ease-in-out;
+}
+
+.second__header__link__text {
+    font-family: var(--font-stolzl);
+    font-size: 1.1rem;
+    color: var(--custom-white);
+}
+
+.second__header__link__text span {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.8rem;
+}
+
+/* grid container days styling */
+.grid-container {
+    margin-right: 2.1875rem;
+    display: grid;
+    grid-template-columns: repeat(3, 9.75rem);
+    grid-template-rows: repeat(5, 7.3125rem);
+    grid-template-areas:
+        "vr15 za16 . "
+        "zo17 ma18 di19"
+        "wo20 do21 vr22"
+        ". za23 zo24";
+}
+
+.date-card {
+    background-color: var(--custom-red);
+    width: 100%;
+    height: 100%;
+    color: var(--custom-black);
+    text-decoration: none;
+    font-family: var(--font-stolzl);
+    border: 0.0625rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-card:hover {
+    background-color: var(--custom-black);
+    color: var(--custom-white);
+}
+
+.vr15 {
+    grid-area: vr15;
+}
+
+.za16 {
+    grid-area: za16;
+}
+
+.zo17 {
+    grid-area: zo17;
+}
+
+.ma18 {
+    grid-area: ma18;
+}
+
+.di19 {
+    grid-area: di19;
+}
+
+.wo20 {
+    grid-area: wo20;
+}
+
+.do21 {
+    grid-area: do21;
+}
+
+.vr22 {
+    grid-area: vr22;
+}
+
+.za23 {
+    grid-area: za23;
+}
+
+.zo24 {
+    grid-area: zo24;
+}
+
+.day {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
